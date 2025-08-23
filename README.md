@@ -1,67 +1,128 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🗂 HFiles Dashboard
 
-## Getting Started
+A mini **Medical Record Dashboard** built with **Next.js (App Router)**, **React**, and **TailwindCSS**. This project demonstrates a clean, component-based UI with basic state handling and mock API stubs, ready to integrate with a backend.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## 🚀 Features
+
+* **Authentication (Sign-up placeholder)** – can be extended with session-based auth.
+* **Profile Management**
+
+  * Default avatar + option to change
+  * Editable Email, Phone, and Gender fields
+  * Save button with API stub
+* **File Upload**
+
+  * Select file type (Lab Report, Prescription, etc.)
+  * Input custom file name
+  * Upload PDF or Image files
+  * Submit button with API stub
+* **Uploaded Files Preview**
+
+  * Grid view of uploaded files
+  * File name + type shown
+  * View & Delete buttons
+* **Responsive Design** with TailwindCSS
+
+---
+
+## 📂 Folder Structure
+
 ```
-**Structure**
-hfiles-dashboard/        ← your project root
+hfiles-dashboard/
 │
 ├── app/
 │   ├── api/
-│   │   ├── profile/
-│   │   │   └── route.js        ← profile API stub
-│   │   ├── upload/
-│   │   │   └── route.js        ← upload API stub
-│   │   ├── delete/
-│   │   │   └── route.js        ← delete API stub
-│   │
-│   ├── globals.css             ← Tailwind global styles (default file)
-│   ├── layout.js               ← Next.js root layout
-│   └── page.js                 ← main dashboard page
+│   │   ├── profile/route.js
+│   │   ├── upload/route.js
+│   │   └── delete/route.js
+│   ├── globals.css
+│   ├── layout.js
+│   └── page.js
 │
 ├── components/
-│   ├── Header.js               ← header with logo + profile
-│   ├── ProfileCard.js          ← left section profile info
-│   ├── FileUploadForm.js       ← right section file upload
-│   └── FilePreviewCard.js      ← file preview grid item
+│   ├── Header.js
+│   ├── ProfileCard.js
+│   ├── FileUploadForm.js
+│   └── FilePreviewCard.js
 │
 ├── public/
-│   └── default-profile.png     ← default profile picture
+│   └── default-profile.png
 │
 ├── tailwind.config.js
-├── postcss.config.js
-├── package.json
-└── README.md
+└── package.json
+```
 
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## ⚙️ Setup Instructions
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+### 1. Clone the Repository
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+git clone https://github.com/your-username/hfiles-dashboard.git
+cd hfiles-dashboard
+```
 
-## Learn More
+### 2. Install Dependencies
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+npm install
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 3. Setup TailwindCSS
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Already configured in `tailwind.config.js` and `globals.css`.
 
-## Deploy on Vercel
+### 4. Run the Development Server
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```bash
+npm run dev
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Visit [http://localhost:3000](http://localhost:3000).
 
+---
+
+## 🧩 API Stubs (Frontend Integration Ready)
+
+* `POST /api/profile` → Saves profile details (mock).
+* `POST /api/upload` → Handles file uploads (mock).
+* `POST /api/delete` → Deletes a file (mock).
+
+> These are **stubs** – replace logic with real DB/storage in `.NET backend` or any service.
+
+---
+
+## 🔧 Tech Stack
+
+* **Frontend:** Next.js (App Router), React, TailwindCSS
+* **Backend (Planned):** ASP.NET, SQL/MySQL (not included in this repo)
+
+---
+
+## 📤 Deployment
+
+Deploy easily on [Vercel](https://vercel.com/) or any platform supporting Next.js.
+
+---
+
+## 📌 Notes
+
+* This repo contains **UI + API stubs only**.
+* You can directly plug in your backend APIs later.
+* Fully responsive for mobile and desktop.
+
+---
+
+## 👨‍💻 Author
+
+Pradeep Yadav
+📧 [pradeepsyadav2004@gmail.com](mailto:pradeepsyadav2004@gmail.com)
+🔗 [LinkedIn](https://www.linkedin.com/in/pradeep-yadav-b14a35229)
+💻 [GitHub](https://github.com/pradeep-y)
+
+---
+
+✅ Ready for extension with real backend + authentication!
