@@ -13,6 +13,36 @@ pnpm dev
 # or
 bun dev
 ```
+**Structure**
+hfiles-dashboard/        ← your project root
+│
+├── app/
+│   ├── api/
+│   │   ├── profile/
+│   │   │   └── route.js        ← profile API stub
+│   │   ├── upload/
+│   │   │   └── route.js        ← upload API stub
+│   │   ├── delete/
+│   │   │   └── route.js        ← delete API stub
+│   │
+│   ├── globals.css             ← Tailwind global styles (default file)
+│   ├── layout.js               ← Next.js root layout
+│   └── page.js                 ← main dashboard page
+│
+├── components/
+│   ├── Header.js               ← header with logo + profile
+│   ├── ProfileCard.js          ← left section profile info
+│   ├── FileUploadForm.js       ← right section file upload
+│   └── FilePreviewCard.js      ← file preview grid item
+│
+├── public/
+│   └── default-profile.png     ← default profile picture
+│
+├── tailwind.config.js
+├── postcss.config.js
+├── package.json
+└── README.md
+
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
@@ -34,3 +64,4 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
