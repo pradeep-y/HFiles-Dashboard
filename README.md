@@ -1,4 +1,6 @@
 # 🗂 HFiles Dashboard
+## Live URL
+https://pradeep-hfiles-dashboard.netlify.app/
 
 A mini **Medical Record Dashboard** built with **Next.js (App Router)**, **React**, and **TailwindCSS**. This project demonstrates a clean, component-based UI with basic state handling and mock API stubs, ready to integrate with a backend.
 
@@ -26,6 +28,8 @@ A mini **Medical Record Dashboard** built with **Next.js (App Router)**, **React
 * **Responsive Design** with TailwindCSS
 
 ---
+<img width="1919" height="893" alt="image" src="https://github.com/user-attachments/assets/42215779-3d70-467a-a611-c436c437fead" />
+
 
 ## 📂 Folder Structure
 
